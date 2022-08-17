@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    /* Текстр по середине */
+    text-align: center;
+}
+
+.video1 {
+    background-color: red;
+    max-width: 1150px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+iframe {
+    /* ширина ставится по родителю */
+    width: 100%;
+    /* высоту указываем */
+    height: 400px;
+}
+
+.video2 {
+    background-color: green;
+    max-width: 500px;
+    padding: 0 20px;
+    margin: auto;
+}
