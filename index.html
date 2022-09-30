@@ -10,49 +10,74 @@
 </head>
 
 <body>
-<header class="header">
-    <nav class="navbar">
-        <ul class="navbar__list-first">
-            <!-- делаем первый элемент в меню активным -->
-            <li class="activ"><a href="">HOME</a></li>
-            <li><a href=""><span>PRODUCTS</span><span>+</span></a>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="navbar__list-first">
+                <!-- делаем первый элемент в меню активным -->
+                <li class="activ"><a href="">HOME</a></li>
+                <li><a href=""><span>PRODUCTS</span><span>+</span></a>
 
-                <ul class="navbar__list-second">
-                    <li><a href=""><span>Product 1</span><span>+</span></a></li>
-                    <li><a href=""><span>Product 2</span><span>+</span></a>
+                    <ul class="navbar__list-second">
+                        <li><a href=""><span>Product 1</span><span>+</span></a></li>
+                        <li><a href=""><span>Product 2</span><span>+</span></a>
 
-                        <ul class="navbar__list-third">
-                            <li><a href="">Sub Item 2.1</a></li>
-                            <li><a href="">Sub Item 2.2</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">CONTACT</a></li>
-        </ul>
-    </nav>
-</header>
+                            <ul class="navbar__list-third">
+                                <li><a href="">Sub Item 2.1</a></li>
+                                <li><a href="">Sub Item 2.2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div>
+            <h2>ЗВУК из сервера</h2>
+            <audio controls>
+                <source src="audio/pika_mot__timati_maks_barskih_monatik_-_kruzhit_golovu_(zf.fm).mp3"
+                    type="audio/mpeg">
+                Тег audio не поддерживается вашим браузером.
+                <a href="audio/music.mp3">Скачайте музыку</a>.
+            </audio>
+        </div>
+
+        <h2>ВИДЕО из сервера</h2>
+        <div>
+            <video width="400" height="300" controls="controls" poster="video/duel.jpg">
+                <source src="video/file_example_MP4_1280_10MG.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                Элемент video не поддерживается вашим браузером.
+                <a href="video/duel.mp4">Скачайте видео</a>.
+            </video>
+        </div>
+    </section>
+
+
     <section>
         <h1>Встроенное видео из youtube на странице</h1>
-
         <div class="video1">
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/VTDxDSsAKqs"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uYDjxezW0TA"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-
         </div>
 
         <div class="video2">
-
-            <iframe width=" 560" height="315" src="https://www.youtube.com/embed/VTDxDSsAKqs"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8NMkrAPGZ0M"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
-
         </div>
+    </section>
+
+    <!-- !можно все что выше закомментировать, получится сайт -->
+    <section class="site">
+        <!-- <iframe src="https://ithillel.ua/" width="100%" height="1000px" frameborder="0"</iframe> -->
+        <iframe class="site" src="https://ithillel.ua/" frameborder="0"></iframe>
+
     </section>
 </body>
 
