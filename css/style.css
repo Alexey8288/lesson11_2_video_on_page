@@ -1,7 +1,124 @@
+:root {
+    --color-white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.header {
+    /* высота вся страница */
+    min-height: 20vh;
+    display: flex;
+    /* середина по ширине */
+    justify-content: center;
+    /* середина по высоте */
+    align-items: center;
+
+}
+
+/* все ul делаем НЕ списком */
+.navbar ul {
+    /* делает не списком, убирает точки слева */
+    list-style: none;
+    /* сбрасываем ВСЕ отступы */
+    margin: 0;
+    padding: 0;
+    /* позволяет блоки смещать */
+    position: relative;
+    /* бодавляет тень */
+    /* 1 смещение по х, 2 смещение по у, 3 толщина тени, 4 цвет */
+    box-shadow: 0 0 5px black;
+}
+
+/* обращение ко второму и третьему ul, без первого */
+.navbar li ul {
+    /* посволяет смещать не двигаю нижний текст */
+    position: absolute;
+    /* пропадаю с экрана, но они есть */
+    /* иногда для работы деактивируем */
+    display: none;
+
+    /* фон элементов */
+    background-color: blue;
+    /* мин ширина синих элементов */
+    min-width: 180px;
+    /* бодавляет тень */
+    /* 1 смещение по х, 2 смещение по у, 3 толщина тени, 4 цвет */
+    box-shadow: 0 0 5px blue;
+}
+
+
+.navbar__list-first {
+    /* ставит элементы в одну линию */
+    display: flex;
+    background-color: #333333;
+    /* уровни наложения */
+    z-index: 1;
+}
+
+.activ {}
+
+.navbar__list-second {
+    /* уровни наложения */
+    z-index: 2;
+}
+
+.navbar__list-third {
+    /* сдвинули в право элементы */
+    top: calc(100% - 50px);
+    left: 100%;
+    /* уровни наложения */
+    z-index: 3;
+}
+
+/* обязательно, отступы ставим в элементе "а", 
+в противном случае кликабельная будет только надпись, а не кнопка */
+.navbar a {
+    /* меняет строчный в блочный */
+    display: flex;
+    /* ставим отступы между словом и + */
+    gap: 1em;
+    /* растояние между элементами */
+    padding: 1em 2em;
+    /* background-color: #ffffff; */
+    color: var(--color-white);
+    /* убирает подчеркивание */
+    text-decoration: none;
+}
+
+/* при наведении курсора меняется */
+.navbar a:hover {
+    background-color: #0f93ff;
+}
+
+/* первый дочерний li */
+.navbar ul>li:hover>ul {
+    /* при наведении меняет свойство display: none; */
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1 {
     /* Текстр по середине */
